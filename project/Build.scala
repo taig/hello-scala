@@ -10,11 +10,12 @@ extends	android.AutoBuild
 			// Enforce Java 7 compilation (in case you have the JDK 8 installed)
 			javacOptions ++= Seq( "-source", "1.7", "-target", "1.7" ),
 			libraryDependencies ++= Seq(
-				"com.android.support" % "support-v4" % "22.1.1",
-				"com.android.support" % "appcompat-v7" % "22.1.1",
-				"com.android.support" % "cardview-v7" % "22.1.1",
-				"com.android.support" % "gridlayout-v7" % "22.1.1",
-				"com.android.support" % "recyclerview-v7" % "22.1.1"
+				"com.android.support" % "appcompat-v7" % "22.2.0",
+				"com.android.support" % "cardview-v7" % "22.2.0",
+				"com.android.support" % "design" % "22.2.0",
+				"com.android.support" % "gridlayout-v7" % "22.2.0",
+				"com.android.support" % "recyclerview-v7" % "22.2.0",
+				"com.android.support" % "support-v4" % "22.2.0"
 			),
 			name := "HelloScala",
 			scalacOptions ++= Seq(
