@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  package="com.example">
+
+	<application>
+
+		<activity android:name=".Hello" android:label="Scala on Android">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Hello2"
+            android:label="Scala on Android" />
+
+    </application>
+
+</manifest>
