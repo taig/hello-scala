@@ -5,21 +5,19 @@
 
 	<application>
 
-		<activity android:name=".Hello" android:label="Scala on Android">
+		<activity android:name=".Hello"
+				  android:label="Scala on Android">
 
-            <intent-filter>
+			<intent-filter>
 
-                <action android:name="android.intent.action.MAIN" />
+				<action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+				<category android:name="android.intent.category.LAUNCHER" />
 
-            </intent-filter>
+			</intent-filter>
 
-        </activity>
-        <activity
-            android:name=".Hello2"
-            android:label="Scala on Android" />
+		</activity>
 
-    </application>
+	</application>
 
 </manifest>
