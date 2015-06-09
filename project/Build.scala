@@ -31,7 +31,8 @@ extends	android.AutoBuild
 				"-feature" ::
 				Nil
 			),
-			// Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android
+			// Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android (but this might
+			// be resolvable with "retrolamda")
 			scalaVersion := "2.11.6",
 			version := "0.0.0"
 		)
@@ -47,6 +48,7 @@ extends	android.AutoBuild
 				Nil
 			),
 			minSdkVersion in Android := "14",
+			// Shortcut: allows you to execute "sbt packageRelease" instead of "sbt android:packageRelease"
 			packageRelease <<= packageRelease in Android,
 			proguardCache in Android ++= (
 				"android.support" ::
