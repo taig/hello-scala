@@ -2,9 +2,10 @@ package com.example
 
 import android.app.Activity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 
-class Hello extends Activity with TypedFindView
+class Hello extends AppCompatActivity with TypedFindView
 {
 	override def onCreate( savedInstanceState: Bundle ): Unit =
 	{
