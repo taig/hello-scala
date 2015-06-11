@@ -5,7 +5,7 @@ import sbt.Keys._
 object	Build
 extends	android.AutoBuild
 {
-	lazy val main = Project( "hello-scala", file( "." ) )
+	val main = Project( "hello-scala", file( "." ) )
 		.settings(
 			// Enforce Java 7 compilation (in case you have the JDK 8 installed)
 			javacOptions ++= (
@@ -33,13 +33,11 @@ extends	android.AutoBuild
 			),
 			// Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android (but this might
 			// be resolvable with "retrolamda")
-			scalaVersion := "2.11.6",
-			version := "0.0.0"
+			scalaVersion := "2.11.6"
 		)
 		.settings(
 			// Prevent common com.android.builder.packaging.DuplicateFileException.
-			// Add further file names if you experience the exception after adding
-			// new dependencies
+			// Add further file names if you experience the exception after adding new dependencies
 			apkbuildExcludes in Android ++= (
 				"META-INF/LICENSE" ::
 				"META-INF/LICENSE.txt" ::
@@ -47,6 +45,7 @@ extends	android.AutoBuild
 				"META-INF/NOTICE.txt" ::
 				Nil
 			),
+			// Predefined as IceCreamSandwich (4.0), nothing stops you from going below
 			minSdkVersion in Android := "14",
 			// Shortcut: allows you to execute "sbt packageRelease" instead of "sbt android:packageRelease"
 			packageRelease <<= packageRelease in Android,
