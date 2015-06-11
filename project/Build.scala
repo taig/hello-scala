@@ -65,6 +65,9 @@ extends	android.AutoBuild
 			// Shortcut: allows you to execute "sbt run" instead of "sbt android:run"
 			run <<= run in Android,
 			targetSdkVersion in Android := "22",
+			// Disable transitive dependencies of aar and apklib libraries. This is not generally necessary, but
+			// helps getting around some unpleasant corner cases
+			transitiveAndroidLibs in Android := false,
 			versionCode in Android := Some( 0 ),
 			versionName in Android := Some( "0.0.0" )
 		)
