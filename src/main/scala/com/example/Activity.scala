@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 
-class Hello extends AppCompatActivity with TypedFindView
+class Activity extends AppCompatActivity with TypedFindView
 {
 	override def onCreate( savedInstanceState: Bundle ): Unit =
 	{
@@ -12,8 +12,6 @@ class Hello extends AppCompatActivity with TypedFindView
 
 		setContentView( R.layout.main )
 
-		play.api.libs.json.Json.parse( "3" )
-
-		findView( TR.welcome ).setText( "Hello Scala!" )
+		findView( TR.welcome ).setText( R.string.hello )
 	}
 }
