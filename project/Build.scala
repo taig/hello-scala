@@ -6,6 +6,9 @@ object	Build
 extends	android.AutoBuild
 {
 	val main = Project( "hello-scala", file( "." ) )
+		// **************
+		// *** Basics ***
+		// **************
 		.settings(
 			// Enforce Java 7 compilation (in case you have the JDK 8 installed)
 			javacOptions ++= (
@@ -35,6 +38,25 @@ extends	android.AutoBuild
 			// be resolvable with "retrolamda")
 			scalaVersion := "2.11.6"
 		)
+		// ************
+		// *** Test ***
+		// ************
+		.settings(
+			fork in Test := true,
+			libraryDependencies ++= (
+				"com.geteit" %% "robotest" % "0.8" % "test" :: 
+				"org.scalatest" %% "scalatest" % "2.2.5" % "test" ::
+				Nil
+			),
+			resolvers ++= (
+				( "RoboTest" at "https://raw.github.com/zbsz/mvn-repo/master/releases/" ) ::
+				Resolver.sonatypeRepo( "snapshots" ) ::
+				Nil
+			)
+		)
+		// ***************
+		// *** Android ***
+		// ***************
 		.settings(
 			// Prevent common com.android.builder.packaging.DuplicateFileException.
 			// Add further file names if you experience the exception after adding new dependencies
