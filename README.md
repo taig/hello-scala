@@ -1,3 +1,3 @@
-# Scala on Android (Skeleton)
+# Hello Scala!
 
-Scala on Android project structure skeleton
+Scala on Android starter template
