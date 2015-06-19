@@ -9,7 +9,8 @@
 		<activity
 			android:label="@string/name"
 			android:icon="@drawable/icon_launcher"
-			android:name=".Hello">
+			android:name=".Hello"
+			android:theme="@style/Theme">
 
 			<intent-filter>
 

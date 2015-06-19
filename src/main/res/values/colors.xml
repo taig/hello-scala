@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<color name="highlight">#DC322F</color>
+	<color name="highlight_dark">#ffb8302e</color>
+	<color name="main">#505050</color>
+	<color name="neutral">#FFFFFF</color>
+
+</resources>
