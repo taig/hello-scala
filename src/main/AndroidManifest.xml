@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		  package="com.example">
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.example">
 
 	<application>
 
-		<activity android:name=".Hello"
-				  android:label="Scala on Android">
+		<activity
+			android:label="@string/name"
+			android:name=".Hello">
 
 			<intent-filter>
 
