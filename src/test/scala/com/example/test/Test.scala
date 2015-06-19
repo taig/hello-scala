@@ -14,6 +14,6 @@ with	RobolectricSuite
 {
   "Resources" should "be accessible via R" in
   {
-    RuntimeEnvironment.application.getString( R.string.hello ) shouldBe "Hello Scala!"
+    RuntimeEnvironment.application.getString( R.string.name ) shouldBe "Hello Scala!"
   }
 }

@@ -2,6 +2,6 @@
 
 <resources>
 
-	<string name="hello">Hello Scala!</string>
+	<string name="name">Hello Scala!</string>
 
 </resources>

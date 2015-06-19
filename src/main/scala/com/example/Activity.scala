@@ -12,6 +12,6 @@ class Activity extends AppCompatActivity with TypedFindView
 
 		setContentView( R.layout.main )
 
-		findView( TR.welcome ).setText( R.string.hello )
+		findView( TR.welcome ).setText( R.string.name )
 	}
 }
