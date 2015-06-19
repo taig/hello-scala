@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
 
-class Activity extends AppCompatActivity with TypedFindView
+class Hello extends AppCompatActivity with TypedFindView
 {
 	override def onCreate( savedInstanceState: Bundle ): Unit =
 	{

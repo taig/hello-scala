@@ -5,7 +5,7 @@
 
 	<application>
 
-		<activity android:name=".Activity"
+		<activity android:name=".Hello"
 				  android:label="Scala on Android">
 
 			<intent-filter>
