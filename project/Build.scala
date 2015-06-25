@@ -36,7 +36,7 @@ extends	android.AutoBuild
 			),
 			// Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android (but this might
 			// be resolvable with "retrolamda")
-			scalaVersion := "2.11.6"
+			scalaVersion := "2.11.7"
 		)
 		// ************
 		// *** Test ***
