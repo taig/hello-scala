@@ -24,7 +24,6 @@ class Hello extends AppCompatActivity with TypedFindView
 		case android.R.id.home =>
 		{
 			finish()
-			true
 		}
 		case _ => super.onOptionsItemSelected( item )
 	}
