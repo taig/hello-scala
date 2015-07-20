@@ -23,6 +23,7 @@ extends	android.AutoBuild
 				"com.android.support" % "gridlayout-v7" % "22.2.1" ::
 				"com.android.support" % "recyclerview-v7" % "22.2.1" ::
 				"com.android.support" % "support-v4" % "22.2.1" ::
+				// Version 2.4.x requires Java 8
 				"com.typesafe.play" %% "play-json" % "2.3.9" ::
 				Nil
 			),
