@@ -72,7 +72,7 @@ extends	android.AutoBuild
 			minSdkVersion in Android := "14",
 			// Shortcut: allows you to execute "sbt packageRelease" instead of "sbt android:packageRelease"
 			packageRelease <<= packageRelease in Android,
-			platformTarget in Android := "android-22",
+			platformTarget in Android := "android-23",
 			proguardCache in Android ++= (
 				"android.support" ::
 				"play" ::
@@ -88,7 +88,7 @@ extends	android.AutoBuild
 			),
 			// Shortcut: allows you to execute "sbt run" instead of "sbt android:run"
 			run <<= run in Android,
-			targetSdkVersion in Android := "22",
+			targetSdkVersion in Android := "23",
 			// Disable transitive dependencies of aar and apklib libraries. This is not generally necessary, but
 			// helps getting around some unpleasant corner cases
 			transitiveAndroidLibs in Android := false,
