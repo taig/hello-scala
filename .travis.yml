@@ -5,7 +5,7 @@ scala:
 
 android:
   components:
-    - android-22
+    - android-23
     - extra
     - platform-tools
     - tools
