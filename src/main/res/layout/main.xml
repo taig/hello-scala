@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.design.widget.CoordinatorLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:support="http://schemas.android.com/apk/res-auto"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-	<android.support.design.widget.AppBarLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:fitsSystemWindows="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
 
-		<android.support.v7.widget.Toolbar
-			android:id="@+id/toolbar"
-			android:layout_height="wrap_content"
-			android:layout_width="match_parent"
-			android:minHeight="?attr/actionBarSize"
-			android:background="?attr/colorPrimary"
-			support:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-			support:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            support:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            support:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-	</android.support.design.widget.AppBarLayout>
+    </android.support.design.widget.AppBarLayout>
 
-	<ScrollView android:layout_width="match_parent"
-				android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-		<TextView
-			android:id="@+id/welcome"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center"
-			android:padding="10dp" />
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp" />
 
-	</ScrollView>
+    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>
