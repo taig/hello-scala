@@ -2,7 +2,7 @@
 
 *Scala on Android* starter template for http://scala-on-android.taig.io/
 
-[![Build Status](https://travis-ci.org/Taig/Hello-Scala.svg?branch=master)](https://travis-ci.org/Taig/Hello-Scala)
+[![Circle CI](https://circleci.com/gh/Taig/Hello-Scala/tree/master.svg?style=svg)](https://circleci.com/gh/Taig/Hello-Scala/tree/master)
 
 ## Usage
 
