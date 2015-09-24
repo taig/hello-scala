@@ -2,12 +2,14 @@ androidBuild
 
 // Prevent common com.android.builder.packaging.DuplicateFileException.
 // Add further file names if you experience the exception after adding new dependencies
-apkbuildExcludes in Android ++=
-    "META-INF/LICENSE" ::
-    "META-INF/LICENSE.txt" ::
-    "META-INF/NOTICE" ::
-    "META-INF/NOTICE.txt" ::
-    Nil
+packagingOptions in Android := PackagingOptions(
+    excludes =
+        "META-INF/LICENSE" ::
+        "META-INF/LICENSE.txt" ::
+        "META-INF/NOTICE" ::
+        "META-INF/NOTICE.txt" ::
+        Nil
+)
 
 // Predefined as IceCreamSandwich (4.0), nothing stops you from going below
 minSdkVersion in Android := "14"
