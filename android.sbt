@@ -14,9 +14,6 @@ packagingOptions in Android := PackagingOptions(
 // Predefined as IceCreamSandwich (4.0), nothing stops you from going below
 minSdkVersion in Android := "14"
 
-// Shortcut: allows you to execute "sbt packageRelease" instead of "sbt android:packageRelease"
-packageRelease <<= packageRelease in Android
-
 platformTarget in Android := "android-23"
 
 proguardCache in Android ++=
