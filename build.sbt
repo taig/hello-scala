@@ -5,12 +5,12 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "appcompat-v7" % "23.1.0" ::
-    "com.android.support" % "cardview-v7" % "23.1.0" ::
-    "com.android.support" % "design" % "23.1.0" ::
-    "com.android.support" % "gridlayout-v7" % "23.1.0" ::
-    "com.android.support" % "recyclerview-v7" % "23.1.0" ::
-    "com.android.support" % "support-v4" % "23.1.0" ::
+    "com.android.support" % "appcompat-v7" % "23.1.1" ::
+    "com.android.support" % "cardview-v7" % "23.1.1" ::
+    "com.android.support" % "design" % "23.1.1" ::
+    "com.android.support" % "gridlayout-v7" % "23.1.1" ::
+    "com.android.support" % "recyclerview-v7" % "23.1.1" ::
+    "com.android.support" % "support-v4" % "23.1.1" ::
     // Version 2.4.x requires Java 8
     "com.typesafe.play" %% "play-json" % "2.3.10" ::
     Nil
