@@ -1,8 +1,8 @@
 # Hello Scala!
 
-*Scala on Android* starter template for http://scala-on-android.taig.io/
-
 [![Circle CI](https://circleci.com/gh/Taig/Hello-Scala/tree/master.svg?style=shield)](https://circleci.com/gh/Taig/Hello-Scala/tree/master)
+
+*Scala on Android* starter template for http://scala-on-android.taig.io/
 
 ## Usage
 
