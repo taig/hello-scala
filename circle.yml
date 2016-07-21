@@ -5,7 +5,7 @@ machine:
 dependencies:
   pre:
     - ( sleep 5 && while [ 1 ]; do sleep 1; echo y; done ) | android update sdk --no-ui --all --filter "tools,platform-tools,android-24,extra-google-m2repository,extra-android-m2repository,extra-google-google_play_services"
-    - echo y | android update sdk --no-ui --all --filter "build-tools-24.0.0"
+    - echo y | android update sdk --no-ui --all --filter "build-tools-24.0.1"
   cache_directories:
     - "~/.ivy2"
     - "~/.sbt"
