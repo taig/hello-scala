@@ -21,7 +21,7 @@ libraryDependencies ++=
     "org.scalatest" %% "scalatest" % "2.2.6" % "test" ::
     Nil
 
-name := "HelloScala"
+name := "hello-scala"
 
 // Predefined as IceCreamSandwich (4.0), nothing stops you from going below
 minSdkVersion := "14"
