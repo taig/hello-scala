@@ -18,7 +18,7 @@ libraryDependencies ++=
     // Version 2.4.x requires Java 8
     "com.typesafe.play" %% "play-json" % "2.3.10" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
-    "org.scalatest" %% "scalatest" % "2.2.5" % "test" ::
+    "org.scalatest" %% "scalatest" % "2.2.6" % "test" ::
     Nil
 
 name := "HelloScala"
