@@ -37,7 +37,7 @@ packagingOptions := PackagingOptions(
         Nil
 )
 
-platformTarget := "android-23"
+platformTarget := "android-24"
 
 proguardCache ++=
     "android.support" ::
