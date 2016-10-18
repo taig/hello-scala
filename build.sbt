@@ -15,8 +15,6 @@ libraryDependencies ++=
     "com.android.support" % "gridlayout-v7" % "24.2.1" ::
     "com.android.support" % "recyclerview-v7" % "24.2.1" ::
     "com.android.support" % "support-v4" % "24.2.1" ::
-    // Version 2.4.x requires Java 8
-    "com.typesafe.play" %% "play-json" % "2.3.10" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
     "org.scalatest" %% "scalatest" % "3.0.0" % "test" ::
     Nil
