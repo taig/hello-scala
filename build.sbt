@@ -1,4 +1,4 @@
-androidBuild
+enablePlugins( AndroidApp )
 
 fork in Test := true
 
