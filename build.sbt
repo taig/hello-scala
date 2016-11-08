@@ -51,7 +51,7 @@ proguardOptions ++=
     Nil
 
 // Shortcut: allows you to execute "sbt run" instead of "sbt android:run"
-run <<= run in Android
+run := ( run in Android ).value
 
 scalacOptions ++=
     // Print detailed deprecation warnings to the console
