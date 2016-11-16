@@ -16,7 +16,7 @@ libraryDependencies ++=
     "com.android.support" % "recyclerview-v7" % "25.0.1" ::
     "com.android.support" % "support-v4" % "25.0.1" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
-    "org.scalatest" %% "scalatest" % "3.0.0" % "test" ::
+    "org.scalatest" %% "scalatest" % "3.0.1" % "test" ::
     Nil
 
 name := "hello-scala"
