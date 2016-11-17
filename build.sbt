@@ -9,14 +9,14 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "appcompat-v7" % "24.2.1" ::
-    "com.android.support" % "cardview-v7" % "24.2.1" ::
-    "com.android.support" % "design" % "24.2.1" ::
-    "com.android.support" % "gridlayout-v7" % "24.2.1" ::
-    "com.android.support" % "recyclerview-v7" % "24.2.1" ::
-    "com.android.support" % "support-v4" % "24.2.1" ::
+    "com.android.support" % "appcompat-v7" % "25.0.1" ::
+    "com.android.support" % "cardview-v7" % "25.0.1" ::
+    "com.android.support" % "design" % "25.0.1" ::
+    "com.android.support" % "gridlayout-v7" % "25.0.1" ::
+    "com.android.support" % "recyclerview-v7" % "25.0.1" ::
+    "com.android.support" % "support-v4" % "25.0.1" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
-    "org.scalatest" %% "scalatest" % "3.0.0" % "test" ::
+    "org.scalatest" %% "scalatest" % "3.0.1" % "test" ::
     Nil
 
 name := "hello-scala"
