@@ -39,7 +39,6 @@ platformTarget := "android-24"
 
 proguardCache ++=
     "android.support" ::
-    "play" ::
     Nil
 
 proguardOptions ++=
@@ -51,7 +50,7 @@ proguardOptions ++=
     Nil
 
 // Shortcut: allows you to execute "sbt run" instead of "sbt android:run"
-run := ( run in Android ).value
+run := ( run in Android ).evaluated
 
 scalacOptions ++=
     // Print detailed deprecation warnings to the console
