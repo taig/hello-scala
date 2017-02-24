@@ -15,6 +15,7 @@ libraryDependencies ++=
     "com.android.support" % "gridlayout-v7" % "25.2.0" ::
     "com.android.support" % "recyclerview-v7" % "25.2.0" ::
     "com.android.support" % "support-v4" % "25.2.0" ::
+    "io.taig" %% "communicator" % "3.2.0" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
     "org.scalatest" %% "scalatest" % "3.0.1" % "test" ::
     Nil
@@ -47,6 +48,13 @@ proguardOptions ++=
     "-dontwarn javax.xml.bind.DatatypeConverter" ::
     "-dontnote org.joda.time.DateTimeZone" ::
     "-dontnote scala.concurrent.stm.impl.STMImpl$" ::
+    "-dontnote okhttp3.internal.**" ::
+    "-dontwarn io.circe.generic.util.macros.**" ::
+    "-dontwarn monix.execution.internals.**" ::
+    "-dontnote monix.execution.internals.**" ::
+    "-dontwarn okio.**" ::
+    "-dontwarn org.jctools.**" ::
+    "-dontwarn org.slf4j.**" ::
     Nil
 
 // Shortcut: allows you to execute "sbt run" instead of "sbt android:run"
