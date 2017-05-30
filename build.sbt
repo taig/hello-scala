@@ -9,15 +9,15 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "com.android.support" % "appcompat-v7" % "25.2.0" ::
-    "com.android.support" % "cardview-v7" % "25.2.0" ::
-    "com.android.support" % "design" % "25.2.0" ::
-    "com.android.support" % "gridlayout-v7" % "25.2.0" ::
-    "com.android.support" % "recyclerview-v7" % "25.2.0" ::
-    "com.android.support" % "support-v4" % "25.2.0" ::
     "io.taig" %% "communicator" % "3.2.0" ::
+    "com.android.support" % "appcompat-v7" % "25.3.1" ::
+    "com.android.support" % "cardview-v7" % "25.3.1" ::
+    "com.android.support" % "design" % "25.3.1" ::
+    "com.android.support" % "gridlayout-v7" % "25.3.1" ::
+    "com.android.support" % "recyclerview-v7" % "25.3.1" ::
+    "com.android.support" % "support-v4" % "25.3.1" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
-    "org.scalatest" %% "scalatest" % "3.0.1" % "test" ::
+    "org.scalatest" %% "scalatest" % "3.0.3" % "test" ::
     Nil
 
 name := "hello-scala"
@@ -68,9 +68,9 @@ scalacOptions ++=
     Nil
 
 // Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.11"
 
-targetSdkVersion := "24"
+targetSdkVersion := "25"
 
 versionCode := Some( 0 )
 
