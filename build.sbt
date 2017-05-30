@@ -17,7 +17,7 @@ libraryDependencies ++=
     "com.android.support" % "support-v4" % "25.2.0" ::
     "io.taig" %% "communicator" % "3.2.0" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
-    "org.scalatest" %% "scalatest" % "3.0.1" % "test" ::
+    "org.scalatest" %% "scalatest" % "3.0.3" % "test" ::
     Nil
 
 name := "hello-scala"
