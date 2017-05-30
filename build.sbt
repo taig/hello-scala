@@ -68,7 +68,7 @@ scalacOptions ++=
     Nil
 
 // Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.11"
 
 targetSdkVersion := "24"
 
