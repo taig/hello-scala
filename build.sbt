@@ -9,13 +9,14 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "io.taig" %% "communicator" % "3.2.0" ::
+    "io.taig" %% "communicator" % "3.3.0-RC1" ::
     "com.android.support" % "appcompat-v7" % "25.3.1" ::
     "com.android.support" % "cardview-v7" % "25.3.1" ::
     "com.android.support" % "design" % "25.3.1" ::
     "com.android.support" % "gridlayout-v7" % "25.3.1" ::
     "com.android.support" % "recyclerview-v7" % "25.3.1" ::
     "com.android.support" % "support-v4" % "25.3.1" ::
+    "com.google.code.findbugs" % "jsr305" % "3.0.2" % "compile" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
     "org.scalatest" %% "scalatest" % "3.0.3" % "test" ::
     Nil
@@ -36,7 +37,7 @@ packagingOptions := PackagingOptions(
         Nil
 )
 
-platformTarget := "android-24"
+platformTarget := "android-26"
 
 proguardCache ++=
     "android.support" ::
@@ -70,7 +71,7 @@ scalacOptions ++=
 // Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android
 scalaVersion := "2.11.11"
 
-targetSdkVersion := "25"
+targetSdkVersion := "26"
 
 versionCode := Some( 0 )
 
