@@ -37,7 +37,7 @@ packagingOptions := PackagingOptions(
         Nil
 )
 
-platformTarget := "android-24"
+platformTarget := "android-26"
 
 proguardCache ++=
     "android.support" ::
@@ -71,7 +71,7 @@ scalacOptions ++=
 // Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android
 scalaVersion := "2.11.11"
 
-targetSdkVersion := "25"
+targetSdkVersion := "26"
 
 versionCode := Some( 0 )
 
