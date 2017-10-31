@@ -83,3 +83,5 @@ targetSdkVersion := "27"
 versionCode := Some( 0 )
 
 versionName := Some( "0.0.0" )
+
+parallelExecution in Global := false
