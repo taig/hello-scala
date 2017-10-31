@@ -9,7 +9,7 @@ javacOptions ++=
     Nil
 
 libraryDependencies ++=
-    "io.taig" %% "communicator" % "3.3.0-RC1" ::
+    "io.taig" %% "communicator" % "3.3.0-RC2" ::
     "com.android.support" % "appcompat-v7" % "25.3.1" ::
     "com.android.support" % "cardview-v7" % "25.3.1" ::
     "com.android.support" % "design" % "25.3.1" ::
