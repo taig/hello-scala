@@ -10,12 +10,12 @@ javacOptions ++=
 
 libraryDependencies ++=
     "io.taig" %% "communicator" % "3.3.0-RC2" ::
-    "com.android.support" % "appcompat-v7" % "25.3.1" ::
-    "com.android.support" % "cardview-v7" % "25.3.1" ::
-    "com.android.support" % "design" % "25.3.1" ::
-    "com.android.support" % "gridlayout-v7" % "25.3.1" ::
-    "com.android.support" % "recyclerview-v7" % "25.3.1" ::
-    "com.android.support" % "support-v4" % "25.3.1" ::
+    "com.android.support" % "appcompat-v7" % "27.0.0" ::
+    "com.android.support" % "cardview-v7" % "27.0.0" ::
+    "com.android.support" % "design" % "27.0.0" ::
+    "com.android.support" % "gridlayout-v7" % "27.0.0" ::
+    "com.android.support" % "recyclerview-v7" % "27.0.0" ::
+    "com.android.support" % "support-v4" % "27.0.0" ::
     "com.google.code.findbugs" % "jsr305" % "3.0.2" % "compile" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
     "org.scalatest" %% "scalatest" % "3.0.4" % "test" ::
@@ -37,7 +37,7 @@ packagingOptions := PackagingOptions(
         Nil
 )
 
-platformTarget := "android-26"
+platformTarget := "android-27"
 
 proguardCache ++=
     "android.support" ::
@@ -58,6 +58,8 @@ proguardOptions ++=
     "-dontwarn org.slf4j.**" ::
     Nil
 
+resolvers += "Google Maven" at "https://maven.google.com"
+
 // Shortcut: allows you to execute "sbt run" instead of "sbt android:run"
 run := ( run in Android ).evaluated
 
@@ -71,7 +73,7 @@ scalacOptions ++=
 // Don't upgrade to 2.12.x as it requires Java 8 which does not work with Android
 scalaVersion := "2.11.11"
 
-targetSdkVersion := "26"
+targetSdkVersion := "27"
 
 versionCode := Some( 0 )
 
