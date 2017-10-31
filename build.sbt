@@ -41,6 +41,11 @@ platformTarget := "android-27"
 
 proguardCache ++=
     "android.support" ::
+    "cats" ::
+    "io.circe" ::
+    "monix" ::
+    "okhttp3" ::
+    "shapeless" ::
     Nil
 
 proguardOptions ++=
