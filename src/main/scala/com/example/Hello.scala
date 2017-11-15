@@ -4,22 +4,24 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 
-class Hello extends AppCompatActivity with TypedFindView {
-    override def onCreate( savedInstanceState: Bundle ): Unit = {
-        super.onCreate( savedInstanceState )
+class Hello extends AppCompatActivity {
+  override def onCreate(savedInstanceState: Bundle): Unit = {
+    super.onCreate(savedInstanceState)
 
-        setContentView( R.layout.main )
+    val view: TypedViewHolder.main =
+      TypedViewHolder.setContentView(this, TR.layout.main)
 
-        setSupportActionBar( findView( TR.toolbar ) )
-        getSupportActionBar.setDisplayHomeAsUpEnabled( true )
+    setSupportActionBar(view.toolbar)
+    getSupportActionBar.setDisplayHomeAsUpEnabled(true)
 
-        findView( TR.welcome ).setText( R.string.name )
-    }
+    view.welcome.setText(R.string.name)
+  }
 
-    override def onOptionsItemSelected( item: MenuItem ) = item.getItemId match {
-        case android.R.id.home ⇒
-            finish()
-            true
-        case _ ⇒ super.onOptionsItemSelected( item )
+  override def onOptionsItemSelected(item: MenuItem): Boolean =
+    item.getItemId match {
+      case android.R.id.home ⇒
+        finish()
+        true
+      case _ ⇒ super.onOptionsItemSelected(item)
     }
 }

@@ -1,0 +1,41 @@
+version: 2
+jobs:
+  build:
+    working_directory: /app/
+    docker:
+      - image: docker:17.11.0-ce-rc2-git
+    steps:
+      - checkout
+      - setup_remote_docker
+      - restore_cache:
+          keys:
+            - v1-{{ .Branch }}
+          paths:
+            - /caches/hello-scala.tar
+      - run:
+          name: Load Docker image layer cache
+          command: |
+            set +o pipefail
+            docker load -i /caches/hello-scala.tar | true
+      - run:
+          name: Build docker images
+          command: |
+            docker build --cache-from=hello-scala -t hello-scala .
+      - run:
+          name: Save Docker image layer cache
+          command: |
+            mkdir -p /caches/
+            docker save -o /caches/hello-scala.tar hello-scala
+      - save_cache:
+          key: v1-{{ .Branch }}-{{ epoch }}
+          paths:
+            - /caches/hello-scala.tar
+      - run:
+          name: Run tests
+          command: |
+            docker create -v /app/ --name app alpine /bin/true
+            docker cp /app/ app:/
+            docker run \
+              --volumes-from app \
+              --entrypoint="./entrypoint.sh" \
+              hello-scala
