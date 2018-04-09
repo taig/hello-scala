@@ -18,7 +18,7 @@ libraryDependencies ++=
     "com.android.support" % "support-v4" % "27.1.1" ::
     "com.google.code.findbugs" % "jsr305" % "3.0.2" % "compile" ::
     "com.geteit" %% "robotest" % "0.12" % "test" ::
-    "org.scalatest" %% "scalatest" % "3.0.4" % "test" ::
+    "org.scalatest" %% "scalatest" % "3.0.5" % "test" ::
     Nil
 
 name := "hello-scala"
