@@ -11,7 +11,7 @@ RUN         apk add --no-cache ca-certificates wget bash
 RUN         update-ca-certificates
 
 # Install glibc for Android SDK
-RUN         wget -q https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub -O /etc/apk/keys/sgerrand.rsa.pub
+RUN         wget -q https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub -O /etc/apk/keys/sgerrand.rsa.pub
 RUN         wget -q https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC/glibc-$GLIBC.apk -O /tmp/glibc.apk
 RUN         wget -q https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC/glibc-bin-$GLIBC.apk -O /tmp/glibc-bin.apk
 RUN         apk add --no-cache /tmp/glibc.apk /tmp/glibc-bin.apk
